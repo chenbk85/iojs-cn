@@ -304,36 +304,36 @@ https://iojs.org/api/console.html
 
 https://iojs.org/api/cluster.html
 
-- Updated `cluster` to use round-robin load balancing by default on non-Windows platforms. The scheduling policy is configurable however.
-- `--debug` has been made cluster-aware.
-- Many bug fixes.
+- 更新了在非 Windows 平台默认使用 round-robin 负载均衡算法，这个是可以配置的。
+- 支持了 `--debug` 调试
+- 修复了很多 bug
 
 ### crypto
 
 https://iojs.org/api/crypto.html
 
-- Added support for custom generator values to `DiffieHellman` (defaulting to 2 for backwards compatibility).
-- Added support for custom pbkdf2 digest methods.
-- Added support for elliptic curve-based Diffie-Hellman.
-- Added support for loading and setting the engine for some/all OpenSSL functions.
-- Added support for passing in a passphrase for decrypting the signing key to `Sign.sign()`.
-- Added support for private key passphrase in every method that accepts it.
-- Added support for RSA public/private encryption/decryption functionality.
-- Added support for setting and getting of authentication tags and setting additional authentication data when using ciphers such as AES-GCM.
+- 新增支持自定义 `DiffieHellman` 的 generator (为了向下兼容默认为 2)。
+- 新增支持自定义 pbkdf2 方法。
+- 新增支持 elliptic curve-based Diffie-Hellman。
+- 新增支持为部分或全部 OpenSSL 函数加载和设置引擎。
+- 新增支持 `Sign.sign()` 传递口令（passphrase）来解码签名密钥。
+- 新增支持所有方法可传递私钥口令
+- 新增支持使用公钥或私钥来 RSA 编码或解码的功能
+- 新增支持存取认证标签，当然使用 ciphers（如  AES-GCM）的时候可以设置额外的认证数据。
 
 ### dgram
 
 https://iojs.org/api/dgram.html
 
-- Added support for receiving empty UDP packets.
+- 新增支持接受空的 UDP 包。
 
 ### dns
 
 https://iojs.org/api/dns.html
 
-- Added `dns.resolveSoa`, `dns.getServers`, and `dns.setServers` methods.
-- Added `hostname` on error messages when available.
-- Improved error handling consistency.
+- 新增 `dns.resolveSoa`, `dns.getServers`, and `dns.setServers` 方法。
+- 在错误信息上添加 `hostname`
+- 优化错误处理的一致性
 
 ### events
 
